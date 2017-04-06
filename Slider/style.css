@@ -1,0 +1,112 @@
+body {
+  font-size: 25px;
+  background: #c6f2dd; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #c6f2dd , #c5cff1); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #c6f2dd, #c5cff1); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #c6f2dd, #c5cff1); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #c6f2dd , #c5cff1); /* Standard syntax */
+}
+
+#bar {
+  background: #427df4;
+  text-align:center;
+  margin:auto;
+  color:white;
+  font-size:40px;
+  font-weight:bold;
+}
+
+}
+
+ol li {
+    padding: 5px;
+    margin-left: 35px;
+}
+
+
+input[type=range] {
+    width: 180px;
+  cursor: pointer;
+}
+
+.scale {
+    word-spacing: 25px;
+    text-align: justify;
+}
+
+.wrapper {
+    padding-left: 50px;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #d9d9d9;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  position: relative;
+  outline-color: black;
+  outline-style: solid;
+  outline-width: 1px;  
+}
+
+.button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+
